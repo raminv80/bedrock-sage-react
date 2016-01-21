@@ -7,7 +7,7 @@ return [
     // The name of the application to deploy
     // This will create a folder of the same name in the root directory
     // configured above, so be careful about the characters used
-    'application_name' => 'wordpress',
+    'application_name' => 'APP_NAME',
 
     // Plugins
     ////////////////////////////////////////////////////////////////////

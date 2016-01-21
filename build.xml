@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="wordpress" default="build">
+<project name="APP_NAME" default="build">
   <target name="build"/>
   <target name="test"/>
   <target name="migrate-db"/>
+  <target name="generate-keys" description="generate keys and salts"/>
   <target name="clean" description="remove build artifacts"/>
-  <target name="post-install"/>
+  <target name="post-install">
+      <!--
+         development:
+         staging/production:
+           blow away all .git if installed from source
+         -->
+  </target>
   <target name="post-create-project">
     <!--
          copy .env.example to .env
          prompt for new project name
          change in all necessary locations
+         * build.xml
+         * new git origin?
+         * rocketeer
+            * scm 
+            * application name
+         * composer.json
              -->
   </target>
   <target name="loaddotenv" description="make .env variables available as properties to phing">
