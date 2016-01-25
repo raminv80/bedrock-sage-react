@@ -13,10 +13,9 @@
     "preferred-install": "dist"
   },
   "repositories": [
-    {
-      "type": "composer",
-      "url": "http://wpackagist.org"
-    }
+      {
+          "packagist": false
+      }
   ],
   "require": {
     "php": ">=5.5",
