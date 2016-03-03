@@ -46,6 +46,15 @@ return [
             'agent'     => '',
             'db_role'   => true,
         ],
+        'production' => [
+            'host'      => 'hybridmarketing.com.au',
+            'username'  => 'ubuntu',
+            'password'  => '',
+            'key'       => '',
+            'keyphrase' => '',
+            'agent'     => '',
+            'db_role'   => true,
+        ],
     ],
 
     /*
@@ -77,8 +86,13 @@ return [
         // Stages configurations
         'stages'      => [],
         // Connections configuration
-        'connections' => [],
-
+        'connections' => [
+            'production' => [
+                'remote' => [
+                    'root_directory' => '/home/APP_NAME'
+                ],
+            ]
+        ],
     ],
 
 ];
