@@ -14,16 +14,16 @@
       "secure-http": false
   },
   "repositories": [
-      {
+    {
           "packagist": false
-      }
+    }
   ],
   "require": {
     "php": ">=5.5",
     "composer/installers": "~1.2.0",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.7.3",
-    "oscarotero/env": "^1.0",
+    "johnpbloch/wordpress": "4.8.0",
+    "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0"
   },
   "require-dev": {
@@ -44,6 +44,9 @@
       "post-create-project-cmd": [
           "phing post-create-project"
       ],
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
     "test": [
       "vendor/bin/phpcs"
     ]
