@@ -22,7 +22,7 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.2",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.8.2",
+    "johnpbloch/wordpress": "4.8.3",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0"
   },
@@ -38,12 +38,6 @@
     "wordpress-install-dir": "web/wp"
   },
   "scripts": {
-      "post-install-cmd": [
-          "phing post-install"
-      ],
-      "post-create-project-cmd": [
-          "phing post-create-project"
-      ],
     "post-root-package-install": [
       "php -r \"copy('.env.example', '.env');\""
     ],
