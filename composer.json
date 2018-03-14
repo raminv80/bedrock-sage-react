@@ -22,7 +22,7 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.9.0",
+    "johnpbloch/wordpress": "4.9.4",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0"
   },
@@ -42,7 +42,7 @@
       "php -r \"copy('.env.example', '.env');\""
     ],
     "test": [
-      "vendor/bin/phpcs"
+      "phpcs"
     ]
   }
 }
