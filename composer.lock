@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fd120212dd09e746f056df1116586ab",
+    "content-hash": "3908df6955a3eaf8a40de8619f2614c3",
     "packages": [
         {
             "name": "composer/installers",
@@ -293,6 +293,20 @@
                 "wordpress"
             ],
             "time": "2018-01-29T14:49:29+00:00"
+        },
+        {
+            "name": "masterpress/masterpress",
+            "version": "1.1.4",
+            "dist": {
+                "type": "tar",
+                "url": "http://satis.dev.byhybrid.com.au/private/packages/masterpress-masterpress-1.1.4.tar",
+                "reference": null,
+                "shasum": "0e20212f69847b555987da53b30d3d03022aa8c8"
+            },
+            "require": {
+                "composer/installers": "~v1.0.12"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "oscarotero/env",

@@ -29,7 +29,8 @@
     "gravityforms/gravityforms": "2.1.1.19",
     "wpackagist-plugin/w3-total-cache": "^0.9.7",
     "wpackagist-plugin/wordpress-seo": "^7.7",
-    "gravityforms/mailchimp": "^3.7"
+    "gravityforms/mailchimp": "^3.7",
+    "masterpress/masterpress": "^1.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.9.1"
