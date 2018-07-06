@@ -15,7 +15,7 @@
   },
   "repositories": [
     {
-          "packagist": false
+      "packagist": false
     }
   ],
   "require": {
@@ -24,7 +24,12 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.9.4",
     "oscarotero/env": "^1.1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "hybrid/gravity-forms-advanced-file-uploader": "^0.0.3",
+    "gravityforms/gravityforms": "2.1.1.19",
+    "wpackagist-plugin/w3-total-cache": "^0.9.7",
+    "wpackagist-plugin/wordpress-seo": "^7.7",
+    "gravityforms/mailchimp": "^3.7"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.9.1"

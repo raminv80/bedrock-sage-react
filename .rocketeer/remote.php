@@ -31,6 +31,7 @@ return [
     // user uploaded data, file-based databases, etc.
     'shared'         => [
         'web/app/uploads',
+        'web/app/cache',
         '.env'
     ],
 
@@ -59,7 +60,10 @@ return [
 
         // The folders and files to set as web writable
         'files'    => [
-            'web/app/uploads'
+            'web/app/uploads',
+            'web/app/cache',
+            'web/app/w3tc-config',
+            'web/.htaccess'
         ],
 
         // Here you can configure what actions will be executed to set

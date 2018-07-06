@@ -7,7 +7,7 @@ return [
     // The name of the application to deploy
     // This will create a folder of the same name in the root directory
     // configured above, so be careful about the characters used
-    'application_name' => 'APP_NAME',
+    'application_name' => 'bemore',
 
     // Plugins
     ////////////////////////////////////////////////////////////////////
@@ -30,24 +30,15 @@ return [
     ////////////////////////////////////////////////////////////////////
 
     // The default remote connection(s) to execute tasks on
-    'default'          => ['staging'],
+    'default'          => ['production'],
 
     // The various connections you defined
     // You can leave all of this empty or remove it entirely if you don't want
     // to track files with credentials : Rocketeer will prompt you for your credentials
     // and store them locally
     'connections'      => [
-        'staging' => [
-            'host'      => 'stage.byhybrid.com.au',
-            'username'  => 'ubuntu',
-            'password'  => '',
-            'key'       => '',
-            'keyphrase' => '',
-            'agent'     => '',
-            'db_role'   => true,
-        ],
         'production' => [
-            'host'      => 'hybridmarketing.com.au',
+            'host'      => '13.211.241.14',
             'username'  => 'ubuntu',
             'password'  => '',
             'key'       => '',
@@ -84,14 +75,9 @@ return [
     'on'               => [
 
         // Stages configurations
-        'stages'      => [],
+        'stages'      => ['staging','production'],
         // Connections configuration
         'connections' => [
-            'production' => [
-                'remote' => [
-                    'root_directory' => '/home/APP_NAME'
-                ],
-            ]
         ],
     ],
 
