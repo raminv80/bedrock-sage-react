@@ -77,6 +77,14 @@ define('DISALLOW_FILE_EDIT', true);
 define('DISALLOW_FILE_MODS', true);
 
 /**
+ * VIDEO S3
+ */
+define('VIDEO_S3_REGION', env('VIDEO_S3_REGION') ?: 'ap-southeast-2');
+define('VIDEO_S3_BUCKET', env('VIDEO_S3_BUCKET') ?: '');
+define('VIDEO_S3_ACCESS_ID', env('VIDEO_S3_ACCESS_ID') ?: '');
+define('VIDEO_S3_ACCESS_SECRET', env('VIDEO_S3_ACCESS_SECRET') ?: '');
+
+/**
  * Bootstrap WordPress
  */
 if (!defined('ABSPATH')) {
