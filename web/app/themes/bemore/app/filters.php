@@ -19,16 +19,16 @@ add_filter('prso_gform_pluploader_view_file_link_content', function ($data){
     $file_headers = @get_headers($expect);
 
     $link = "<a target='_blank' href='".$file_info['url']."'>".$file_info['ext']."</a>";
+    $manifest = "$bitmovin_output/$filename/manifest.mpd";
 
     if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
         return "<dl class='encoded-urls'>".
                "<dt>Source:</dt><dd>$link</dd>".
-               "<dt>Video Index:</dt><dd>NA</dd>".
+               "<dt>Video Index:</dt><dd>$manifest</dd>".
                "<dt>Manifest:</dt><dd>NA</dd>".
                "</dl>";
     }
     else {
-        $manifest = "$bitmovin_output/$filename/manifest.mpd";
         return "<dl class='encoded-urls'>".
                "<dt>Source:</dt><dd>$link</dd>".
                "<dt>Video Index:</dt><dd><a href='$expect' target='_blank'>$expect</a></dd>".
