@@ -8,6 +8,21 @@ use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
 
 /**
+ * Add site wide options
+ */
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title' 	=> 'Site Settings',
+        'menu_title'	=> 'Site Settings',
+        'menu_slug' 	=> 'site-settings',
+        'capability'	=> 'edit_posts',
+        'redirect'		=> false
+    ));
+
+}
+
+/**
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
