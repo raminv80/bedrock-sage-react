@@ -24,8 +24,8 @@ add_filter('prso_gform_pluploader_view_file_link_content', function ($data){
     if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
         return "<dl class='encoded-urls'>".
                "<dt>Source:</dt><dd>$link</dd>".
-               "<dt>Video Index:</dt><dd>$manifest</dd>".
-               "<dt>Manifest:</dt><dd>NA</dd>".
+               "<dt>Video Index:</dt><dd>$expect</dd>".
+               "<dt>Manifest:</dt><dd>$manifest</dd>".
                "</dl>";
     }
     else {
