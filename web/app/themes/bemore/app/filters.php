@@ -3,6 +3,49 @@
 namespace App;
 
 /**
+ * Add BitMovin encoded urls to admin entries for submitted applications
+ */
+add_filter('prso_gform_pluploader_view_file_link_content', function ($data){
+    //TODO: generate the bitmovin info
+    $link = $data['link'];
+    $file_info = $data['file_info'];
+    $key = $data['key'];
+
+    $info = pathinfo($file_info['ext']);
+    $filename  = urlencode($info['filename']);
+    $bitmovin_output = get_field('bitmovin_output', 'option');
+
+    $expect = "$bitmovin_output/$filename/index.html";
+    $file_headers = @get_headers($expect);
+
+    $link = "<a target='_blank' href='".$file_info['url']."'>".$file_info['ext']."</a>";
+
+    if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
+        return "<dl class='encoded-urls'>".
+               "<dt>Source:</dt><dd>$link</dd>".
+               "<dt>Video Index:</dt><dd>NA</dd>".
+               "<dt>Manifest:</dt><dd>NA</dd>".
+               "</dl>";
+    }
+    else {
+        $manifest = "$bitmovin_output/$filename/manifest.mpd";
+        return "<dl class='encoded-urls'>".
+               "<dt>Source:</dt><dd>$link</dd>".
+               "<dt>Video Index:</dt><dd><a href='$expect' target='_blank'>$expect</a></dd>".
+               "<dt>Manifest:</dt><dd><a href='$manifest' target='_blank'>$manifest</a></dd>".
+               "</dl>";
+    }
+
+});
+
+add_filter('prso_gform_pluploader_csv_link_content', function($file){
+    $bitmovin_output = get_field('bitmovin_output', 'option');
+    $expect = "$bitmovin_output/$file/index.html";
+    return $expect;
+});
+
+
+/**
  * Add <body> classes
  */
 add_filter('body_class', function (array $classes) {
