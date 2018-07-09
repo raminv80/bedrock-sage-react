@@ -26,13 +26,14 @@
     "johnpbloch/wordpress": "4.9.4",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "hybrid/gravity-forms-advanced-file-uploader": "^0.0.3",
+    "hybrid/gravity-forms-advanced-file-uploader": "^0",
     "gravityforms/gravityforms": "2.1.1.19",
     "wpackagist-plugin/w3-total-cache": "^0.9.7",
     "wpackagist-plugin/wordpress-seo": "^7.7",
     "gravityforms/mailchimp": "^3.7",
-    "masterpress/masterpress": "^1.1",
-    "aws/aws-sdk-php": "^3.62"
+    "aws/aws-sdk-php": "^3.62",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.6",
+    "soberwp/models": "1.0.6-p"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.9.1"

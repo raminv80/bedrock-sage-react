@@ -4,20 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b151e1ce143495a46318636bea3d91a",
+    "content-hash": "ae1ba17856258380a808658572340d2b",
     "packages": [
         {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.6.10",
+            "dist": {
+                "type": "tar",
+                "url": "http://satis.dev.byhybrid.com.au/private/packages/advanced-custom-fields-advanced-custom-fields-pro-5.6.10.tar",
+                "reference": null,
+                "shasum": "845603d5dc13697f02c91eac65b2e57bd265edcd"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
             "name": "aws/aws-sdk-php",
-            "version": "3.62.9",
+            "version": "3.62.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c4bca5798cad053f3b594434c61320c13f0ebb72"
+                "reference": "b45b916eceb20d3c9e2b36e9e93e926a278d97ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c4bca5798cad053f3b594434c61320c13f0ebb72",
-                "reference": "c4bca5798cad053f3b594434c61320c13f0ebb72",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b45b916eceb20d3c9e2b36e9e93e926a278d97ca",
+                "reference": "b45b916eceb20d3c9e2b36e9e93e926a278d97ca",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +98,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-07-05T21:14:33+00:00"
+            "time": "2018-07-06T17:41:33+00:00"
         },
         {
             "name": "composer/installers",
@@ -396,18 +410,75 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "hassankhan/config",
+            "version": "0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hassankhan/config.git",
+                "reference": "06ac500348af033f1a2e44dc357ca86282626d4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hassankhan/config/zipball/06ac500348af033f1a2e44dc357ca86282626d4a",
+                "reference": "06ac500348af033f1a2e44dc357ca86282626d4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "suggest": {
+                "symfony/yaml": "~2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Noodlehaus\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hassan Khan",
+                    "homepage": "http://hassankhan.me/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Lightweight configuration file loader that supports PHP, INI, XML, JSON, and YAML files",
+            "homepage": "http://hassankhan.me/config/",
+            "keywords": [
+                "config",
+                "configuration",
+                "ini",
+                "json",
+                "microphp",
+                "unframework",
+                "xml",
+                "yaml",
+                "yml"
+            ],
+            "time": "2016-02-11T16:21:17+00:00"
+        },
+        {
             "name": "hybrid/gravity-forms-advanced-file-uploader",
-            "version": "v0.0.3",
+            "version": "v0.0.5",
             "source": {
                 "type": "git",
                 "url": "git@dev.byhybrid.com.au:/wordpress/plugins/gravity-forms-advanced-file-uploader",
-                "reference": "af2d94e79f69288e3f6e1fd4e6d7ebd04760b5c8"
+                "reference": "e62d029bc74d9dd62572de6181852d831626aa53"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://satis.dev.byhybrid.com.au/private/packages/hybrid-gravity-forms-advanced-file-uploader-v0.0.3-c33b64.tar",
-                "reference": "af2d94e79f69288e3f6e1fd4e6d7ebd04760b5c8",
-                "shasum": "13f5812b36afe2cc90b77cb864405b6049f308c0"
+                "url": "http://satis.dev.byhybrid.com.au/private/packages/hybrid-gravity-forms-advanced-file-uploader-v0.0.5-504e6c.tar",
+                "reference": "e62d029bc74d9dd62572de6181852d831626aa53",
+                "shasum": "3430cdf1e25061ee45ebe9f13ed5574e0f020a1b"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -425,7 +496,7 @@
                 "gravity form",
                 "plugin"
             ],
-            "time": "2018-07-06T02:07:54+00:00"
+            "time": "2018-07-09T03:07:41+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -554,20 +625,6 @@
                 "wordpress"
             ],
             "time": "2018-01-29T14:49:29+00:00"
-        },
-        {
-            "name": "masterpress/masterpress",
-            "version": "1.1.4",
-            "dist": {
-                "type": "tar",
-                "url": "http://satis.dev.byhybrid.com.au/private/packages/masterpress-masterpress-1.1.4.tar",
-                "reference": null,
-                "shasum": "0e20212f69847b555987da53b30d3d03022aa8c8"
-            },
-            "require": {
-                "composer/installers": "~v1.0.12"
-            },
-            "type": "wordpress-plugin"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -772,6 +829,171 @@
                 "wordpress wp bcrypt password"
             ],
             "time": "2016-03-01T16:27:06+00:00"
+        },
+        {
+            "name": "soberwp/models",
+            "version": "1.0.6-p",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/soberwp/models.git",
+                "reference": "3c24cfee27d870f4d24ec53af51498734f00cb51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/soberwp/models/zipball/3c24cfee27d870f4d24ec53af51498734f00cb51",
+                "reference": "3c24cfee27d870f4d24ec53af51498734f00cb51",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "hassankhan/config": "^0.10.0",
+                "php": ">=5.6",
+                "symfony/yaml": "^3.3"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Sober\\Models\\": "src/",
+                    "Sober\\Models\\Model\\": "src/Model/"
+                },
+                "files": [
+                    "models.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Darren Jacoby",
+                    "email": "darren@jacoby.co.za",
+                    "homepage": "https://github.com/darrenjacoby"
+                }
+            ],
+            "description": "WordPress plugin to create custom post types and taxonomies using JSON, YAML or PHP files.",
+            "homepage": "https://github.com/soberwp",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2018-01-29T08:26:11+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://satis.dev.byhybrid.com.au/packages/symfony-polyfill-ctype-7cc359f1b7b80fc25ed7796be7d96adc9b354bae-zip-03a31b.tar",
+                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+                "shasum": "b217fff18ca3feed52ad4b2c924b47adad6a7191"
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-04-30T19:57:29+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://satis.dev.byhybrid.com.au/packages/symfony-yaml-c5010cc1692ce1fa328b1fb666961eb3d4a85bb0-zip-c4327b.tar",
+                "reference": "c5010cc1692ce1fa328b1fb666961eb3d4a85bb0",
+                "shasum": "dc173cd3dc95e4a76f9b61e3841aee991fa6064f"
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
+            },
+            "require-dev": {
+                "symfony/console": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2018-05-03T23:18:14+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
