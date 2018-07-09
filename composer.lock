@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae1ba17856258380a808658572340d2b",
+    "content-hash": "50bb572cf28dad8ece2a13ef0b91e6aa",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -468,17 +468,11 @@
         },
         {
             "name": "hybrid/gravity-forms-advanced-file-uploader",
-            "version": "v0.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@dev.byhybrid.com.au:/wordpress/plugins/gravity-forms-advanced-file-uploader",
-                "reference": "e62d029bc74d9dd62572de6181852d831626aa53"
-            },
-            "dist": {
-                "type": "tar",
-                "url": "http://satis.dev.byhybrid.com.au/private/packages/hybrid-gravity-forms-advanced-file-uploader-v0.0.5-504e6c.tar",
-                "reference": "e62d029bc74d9dd62572de6181852d831626aa53",
-                "shasum": "3430cdf1e25061ee45ebe9f13ed5574e0f020a1b"
+                "reference": "1e32364675572795eb4396bcb5f14668f6eb2431"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -496,7 +490,7 @@
                 "gravity form",
                 "plugin"
             ],
-            "time": "2018-07-09T03:07:41+00:00"
+            "time": "2018-07-09T07:06:05+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -1168,7 +1162,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "hybrid/gravity-forms-advanced-file-uploader": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
