@@ -22,16 +22,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.62.10",
+            "version": "3.62.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b45b916eceb20d3c9e2b36e9e93e926a278d97ca"
+                "reference": "53b59b0ab96c92aa6f5e52df00c4af1991c97c5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b45b916eceb20d3c9e2b36e9e93e926a278d97ca",
-                "reference": "b45b916eceb20d3c9e2b36e9e93e926a278d97ca",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/53b59b0ab96c92aa6f5e52df00c4af1991c97c5d",
+                "reference": "53b59b0ab96c92aa6f5e52df00c4af1991c97c5d",
                 "shasum": ""
             },
             "require": {
@@ -98,7 +98,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-07-06T17:41:33+00:00"
+            "time": "2018-07-10T00:18:49+00:00"
         },
         {
             "name": "composer/installers",
@@ -472,7 +472,7 @@
             "source": {
                 "type": "git",
                 "url": "git@dev.byhybrid.com.au:/wordpress/plugins/gravity-forms-advanced-file-uploader",
-                "reference": "1e32364675572795eb4396bcb5f14668f6eb2431"
+                "reference": "8134d3f49b250f40531815ccc41da19cfa8f4e4c"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -490,7 +490,7 @@
                 "gravity form",
                 "plugin"
             ],
-            "time": "2018-07-09T07:06:05+00:00"
+            "time": "2018-07-10T02:59:21+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
