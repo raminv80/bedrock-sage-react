@@ -1,6 +1,9 @@
 module.exports = {
   "root": true,
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "globals": {
     "wp": true
   },
@@ -11,9 +14,12 @@ module.exports = {
     "browser": true,
     "jquery": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "globalReturn": true,
+      "jsx": true,
+      "modules": true,
       "generators": false,
       "objectLiteralDuplicateProperties": false,
       "experimentalObjectRestSpread": true
@@ -22,7 +28,8 @@ module.exports = {
     "sourceType": "module"
   },
   "plugins": [
-    "import"
+    "import",
+    "react",
   ],
   "settings": {
     "import/core-modules": [],
@@ -42,6 +49,7 @@ module.exports = {
         "exports": "always-multiline",
         "functions": "ignore"
       }
-    ]
+    ],
+    "semi": 0,
   }
 }

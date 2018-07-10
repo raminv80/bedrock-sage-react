@@ -2,6 +2,7 @@
   "entry": {
     "main": [
       "./scripts/main.js",
+      "./react/main.jsx",
       "./styles/main.scss"
     ],
     "customizer": [

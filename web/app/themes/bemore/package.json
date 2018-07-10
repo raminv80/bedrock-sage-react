@@ -65,7 +65,14 @@
     "node": ">= 6.9.4"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.52",
     "autoprefixer": "~8.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "browser-sync": "~2.23.6",
     "browsersync-webpack-plugin": "^0.6.0",
     "bs-html-injector": "~3.0",
@@ -105,6 +112,8 @@
   "dependencies": {
     "bootstrap": "v4.1.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }

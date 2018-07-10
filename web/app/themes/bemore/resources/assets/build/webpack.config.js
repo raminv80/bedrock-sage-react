@@ -58,6 +58,24 @@ let webpackConfig = {
         ],
       },
       {
+        test: /\.jsx$/,
+        exclude: [/(node_modules|bower_components)(?![/|\\](bootstrap|foundation-sites))/],
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'react', 'stage-0'],
+        },
+      },
+      {
+        test: /\.woff2?$/,
+        include: config.paths.assets,
+        loader: 'url',
+        options: {
+          limit: 10000,
+          mimetype: 'application/font-woff',
+          name: `[path]${assetsFilenames}.[ext]`,
+        },
+      },
+      {
         test: /\.css$/,
         include: config.paths.assets,
         use: ExtractTextPlugin.extract({
@@ -118,6 +136,7 @@ let webpackConfig = {
     modules: [
       config.paths.assets,
       'node_modules',
+      'bower_components'
     ],
     enforceExtension: false,
   },
