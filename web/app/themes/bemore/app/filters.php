@@ -2,11 +2,17 @@
 
 namespace App;
 
+/**package
+ * TODO: Add BitMovin encoded urls to notifications for submitted applications
+ */
+add_filter( 'gform_notification',  function($notification, $form, $entry){
+    return $notification;
+}, 10, 3);
+
 /**
  * Add BitMovin encoded urls to admin entries for submitted applications
  */
 add_filter('prso_gform_pluploader_view_file_link_content', function ($data){
-    //TODO: generate the bitmovin info
     $link = $data['link'];
     $file_info = $data['file_info'];
     $key = $data['key'];
