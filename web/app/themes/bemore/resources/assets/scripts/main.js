@@ -6,7 +6,7 @@ import "./autoload/**/*"
 
 // import local dependencies
 import Router from './util/Router';
-import common from './routes/common';
+import common from './routes/common.jsx';
 import home from './routes/home';
 import aboutUs from './routes/about';
 

@@ -2,7 +2,7 @@
   "entry": {
     "main": [
       "./scripts/main.js",
-      "./react/main.jsx",
+      "babel-polyfill",
       "./styles/main.scss"
     ],
     "customizer": [
