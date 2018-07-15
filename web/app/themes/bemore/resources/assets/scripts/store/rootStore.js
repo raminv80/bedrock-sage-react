@@ -11,10 +11,10 @@ const reducer = combineReducers(reducers);
 const persistConfig = {
   key: 'root',
   storage,
+  //whitelist: [], //or use blacklist to define which part of state you wish to be persisted.
 };
 
 const persistedReducer = persistReducer(persistConfig, reducer)
-
 
 const reduxDevTools =
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
